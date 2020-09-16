@@ -157,7 +157,8 @@
         console.log(e);
             if (e.data.hasOwnProperty("right")) {
                 //console.log(e.data.right);
-                document.body.innerHTML = e.data.right;
+                var d = document.body.innerHTML;
+                document.body.innerHTML = e.data.right + d;
             } 
     };
   </script>
